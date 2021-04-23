@@ -10,13 +10,15 @@ int main(){
         freopen("outputf", "w", stdout);
     #endif
 
-    int t;
-    cin>>t;
-    cin.ignore();
+    vector<float> v1 = rb::getVec<float>();
+    vector<float> v2 = rb::getVec<float>();
+    vector<float> v3 = rb::getVec<float>();
 
-    while(t--){
-        vector<float> v = rb::getVec<float>();
-        for(auto x: v) cout<<x<<" ";
-        cout<<endl;
-    }
+    for(auto x:v1) cout<<x<<" ";
+    cout<<endl;
+    for(auto x:v2) cout<<x<<" ";
+    cout<<endl;
+    for(auto x:v3) cout<<x<<" ";
+    cout<<endl;
+
 }
