@@ -12,7 +12,7 @@ int main(){
 
     int arr[] = {22, 55, 121, 222};
 
-    int max = -999; // always use minus infinity , lets say inf=-999 in this case, for max , dont use anything from the array itself
+    int max = -999;
 
     for(int i=0; i < 4; ++i){
         if ( arr[i] > max) max = arr[i];
@@ -20,7 +20,7 @@ int main(){
     int second_max= -999;
     for(int i=0; i < 4; ++i){
         if (arr[i] != max){
-            if ( arr[i] > second_max) second_max = arr[i]; // if i use secondmax = arr[0] will cause problem
+            if ( arr[i] > second_max) second_max = arr[i];
         }
     }
     cout<<second_max;
