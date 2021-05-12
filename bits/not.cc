@@ -26,28 +26,23 @@ template<typename T, typename S> void dbg_print(map<T, S> v){ cerr<<"[ "; for(au
 
 
 
-// bitwise operation (OR)
+// bitwise operation (NOT)
 /*
-    1 | 1 = 1
-    1 | 0 = 1
-    0 | 1 = 1
-    0 | 0 = 0
+    negation of -1 = 0
+    "        "   0 = -1
+    "        "   1 = -2
+    "        "   n = -(n+1)
+
+    we can use abs() :)
 */
 int32_t main(){
     #ifdef amit
         freopen("inputf", "r", stdin);
         freopen("outputf", "w", stdout);
     #endif
-    int x = 23, y = 46;
-    /*
-        46 = 1 0 1 1 1 0
-        23 = 0 1 0 1 1 1
-        ----------------
-             1 1 1 1 1 1
-             
-            32 16 8 4 2 1 = 63
-    */
-    int z = x | y;
-    cout<<z; // output = 63
+    int x;
+    cin>>x; // get a number to test
+    int negated = ~x;
+    cout<<abs(negated);
     return 0;
 }
