@@ -28,24 +28,17 @@ template<typename T, typename S> void dbg_print(map<T, S> v){ cerr<<"[ "; for(au
 
 // bitwise operation (AND)
 
-// And is used for knowing a value is whether odd or even
-
-    //      1 1 0 = 6
-    //    & 0 0 1 = 1
-    //    ------------
-    //      0 0 0 = even
-
-    // if the result is 0 then the number is even 
-    // if the result is 1 then the number is odd
-//
 
 int32_t main(){
     #ifdef amit
         freopen("inputf", "r", stdin);
         freopen("outputf", "w", stdout);
     #endif
-    int x;
-    cin>>x; // get a number to test
-    cout<<(x&1);
+    int x = 50, y = 70;
+
+    x = x^y;
+    y = x^y;
+    x = x^y;
+    cout<<x<<" "<<y;
     return 0;
 }
