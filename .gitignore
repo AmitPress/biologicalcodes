@@ -2,3 +2,4 @@ inputf
 outputf
 *.exe
 .vscode
+*.out

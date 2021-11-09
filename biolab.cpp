@@ -10,10 +10,10 @@ using namespace std;
 #define endlr cerr<<endl
 #define endln cout<<endl
 #define DBG cerr<<"Seen"<<endl
-template<typename T> void dbg_print(T x) { cerr<<x; }
+template <typename T> void dbg_print(T x) { cerr<<x; }
 template <class T, class V> void dbg_print(pair <T, V> p) {cerr << "{"; dbg_print(p.first); cerr << ","; dbg_print(p.second); cerr << "}";}
-template<typename T> void dbg_print(vector<T> v){ cerr<<"[ "; for(T x : v) cerr<<x<<" "; cerr<<"]";}
-template<typename T, typename S> void dbg_print(map<T, S> v){ cerr<<"[ "; for(auto x : v) dbg_print(x); cerr<<" ]"; }
+template <typename T> void dbg_print(vector<T> v){ cerr<<"[ "; for(T x : v) cerr<<x<<" "; cerr<<"]";}
+template <typename T, typename S> void dbg_print(map<T, S> v){ cerr<<"[ "; for(auto x : v) dbg_print(x); cerr<<" ]"; }
 
 /* ----------- -Damit ------------*/
 #ifdef amit
